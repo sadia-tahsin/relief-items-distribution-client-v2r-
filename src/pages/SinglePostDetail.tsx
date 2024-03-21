@@ -6,13 +6,18 @@ import Payment from "./dashboard/Payment";
 import { useAppSelector } from "../redux/features/hooks";
 import { useCurrentUser } from "../redux/features/auth/authSlice";
 //import { FieldValues, SubmitHandler } from "react-hook-form";
-
+type User = {
+  email: string;
+  iat:string; 
+  exp:string
+};
 const SinglePostDetail = () => {
   const { id } = useParams(); // Get the id from the URL parameters
   const { data } = useGetSinglePostQuery(id);// Pass the id to the useGetSinglePostQuery hook
   const [isModalVisible, setIsModalVisible] = useState(false);
   console.log(data);
-  const user:{email:string;iat:string; exp:string}|object|null = useAppSelector(useCurrentUser) // Correct usage of useCurrentToken
+  const user = useAppSelector(useCurrentUser) as User | null;
+
   const navigate = useNavigate()
   const handleEdit = () => {
 
@@ -27,20 +32,7 @@ const SinglePostDetail = () => {
   const handleConfirmation = () => {
     navigate('/dashboard')
   }
-  // const onSubmit: SubmitHandler<FieldValues> = async (formData) => {
-  //   // const updatedPost = { ...selectedPost, ...formData }; // Combine existing post data with form data
-  //   const res = await updatePost(updatedPost);
-  //     console.log(formData);
-  //    if ('data' in res) {
-  //        Swal.fire({
-  //            icon: "success",
-  //            title: "Your post has been updated",
-  //            showConfirmButton: false,
-  //            timer: 1500
-  //        });
-  //        window.location.reload();
-  //    }
-  // };
+
   return (
     <div className="my-5">
       <div className="w-2/3 mx-auto my-4 px-4">

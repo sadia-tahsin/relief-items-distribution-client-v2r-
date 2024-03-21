@@ -6,7 +6,7 @@ import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import { useUpdatePostMutation } from "../../redux/features/reliefPosts/updatePostApi";
 import { useDeletePostMutation } from "../../redux/features/reliefPosts/deletePostApi";
-import Sidebar from "../../components/layout/Sidebar";
+
 
 const Supplies = () => {
   const { data } = useGetAllPostsQuery(undefined);

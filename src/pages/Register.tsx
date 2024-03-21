@@ -1,6 +1,4 @@
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
-import { useAppDispatch } from "../redux/features/hooks";
 import { useRegisterMutation } from "../redux/features/auth/authApi";
 import { Button } from "antd";
 //import { setUser } from "../redux/features/auth/authSlice";
