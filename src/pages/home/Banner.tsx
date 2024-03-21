@@ -29,6 +29,9 @@ const Banner = () => {
                 <div className="bg-black bg-opacity-50 py-10 px-6 w-full">
                 <motion.div variants={intro} initial="hidden" animate="visible">
                 <motion.p
+              variants={introChildren} className="text-4xl font-bold mb-4 text-shadow">Relief Aid Hub</motion.p>
+               
+                <motion.p
               variants={introChildren} className="text-2xl font-bold text-shadow text-slate-950 mb-4">Join us in creating a brighter future</motion.p>
                 <motion.h1
               variants={introChildren} className="text-5xl font-bold mb-8 text-shadow">Your Help Matters</motion.h1>

@@ -1,7 +1,8 @@
 import { Button, Layout, Menu, theme } from 'antd';
 
 import { Content, Header } from 'antd/es/layout/layout';
-import logo from '../../assets/images/RocketLaunch.png'
+// import logo from '../../assets/images/RocketLaunch.png'
+import logo from '../../assets/images/christmas_2012-new_3167.jpg'
 // import { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../redux/features/hooks';
@@ -57,7 +58,7 @@ items = [
           zIndex: 1,
          
           padding: 24,
-          width: '94%',
+          // width: '94%',
           marginLeft:'3%',
           marginRight:'3%',
           display: 'flex',
@@ -67,7 +68,7 @@ items = [
       >
         <div className="demo-logo" style={{ display: 'flex',
           alignItems: 'center', marginRight:"70%"}}>
-          <img src={logo} alt="" />
+          <img src={logo} alt="" className='w-16 h-16 object-contain'/>
         </div>
         <Menu
           theme="dark"
