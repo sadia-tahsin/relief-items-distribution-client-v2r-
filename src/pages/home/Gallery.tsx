@@ -5,16 +5,16 @@ import img4 from '../../assets/images/unrecognizable-volunteers-packing-donated-
 import img5 from '../../assets/images/front-view-kids-with-plastic-bag.jpg'
 const Gallery = () => {
   return (
-    <div className="mt-24 text-center">
-      <h1 className="text-6xl font-extrabold text-center mb-4">Gallery</h1>
-      <p className="mb-14">
+    <div className="mt-24 text-center ">
+      <h1 className="text-6xl font-extrabold text-center mb-4 dark:text-white">Gallery</h1>
+      <p className="mb-14 dark:text-white">
         Ut posuere felis arcu tellus tempus in in ultricies. Gravida id nibh
         ornare viverra. Ultrices <br></br>faucibus neque velit risus ac id
         lorem.
       </p>
     
-      <section className="bg-white">
-	<div className="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6">
+      <section className="bg-white dark:bg-transparent">
+	<div className="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6 border border-gray-300 p-4 rounded-lg mx-3">
 		<div className="grid grid-cols-1 md:grid-cols-5 gap-4 h-full">
 			<div className="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
 				<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">

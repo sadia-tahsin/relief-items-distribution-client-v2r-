@@ -99,7 +99,7 @@ const Supplies = () => {
                         <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
                             <form  onSubmit={handleSubmit(onSubmit)}>
                                 <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                                    {/* Your form fields */}
+                                   
                                     <div className="mb-4">
                                         <label htmlFor="Image" className="block text-gray-700">Image URL</label>
                                         <input type="text" id="Image" className="form-input mt-1 w-full p-2" value={selectedPost.Image} onChange={(e) => setSelectedPost({ ...selectedPost, Image: e.target.value })} />
@@ -135,5 +135,4 @@ const Supplies = () => {
         </div>
     );
 };
-
 export default Supplies;

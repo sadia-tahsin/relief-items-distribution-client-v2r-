@@ -20,6 +20,13 @@ const Sidebar = () => {
                     <LayoutDashboard className="shrink-0" />
                     <span className="truncate">Create Post</span>
                 </NavLink>
+                <NavLink
+                    to="/dashboard/create-testimonial"
+                    className="p-3 bg-neutral-700 text-white hover:text-red-500 rounded-md truncate transition-all flex items-center gap-2"
+                >
+                    <LayoutDashboard className="shrink-0" />
+                    <span className="truncate">Add Testimonial</span>
+                </NavLink>
                 
             </nav>
         </div>

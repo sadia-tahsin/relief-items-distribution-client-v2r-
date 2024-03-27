@@ -33,7 +33,7 @@ const Testimonials = () => {
   const xValue2 = useTransform(scrollYProgress,[0,0.75],[700,0.5])
 
   return (
-    <div className="my-20 ml-10">
+    <div className="my-20 ml-10 ">
        <motion.div 
               style={{
                 x:xValue2,
@@ -41,13 +41,13 @@ const Testimonials = () => {
             }} 
             ref = {componentRef} >
         <p className="text-xl font-bold mb-4 text-yellow-300 ">Words from Top Contributors</p>
-        <h1 className="text-6xl font-extrabold mb-14">
+        <h1 className="text-6xl font-extrabold mb-14 dark:text-white">
           Testimonials
         </h1>
 
         </motion.div>
 
-      <div className="block md:hidden">
+      {/* <div className="block md:hidden">
         <div className={`rounded-md bg-slate-200 p-10 mx-auto my-4`}>
           <div className="flex justify-enter mb-4">
             <img src={img} alt="" className="rounded-full w-20 h-20" />
@@ -137,8 +137,8 @@ const Testimonials = () => {
             what they achieved!"
           </p>
         </div>
-      </div>
-      <div className="hidden md:block">
+      </div> */}
+      <div className="md:block">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={50}
@@ -150,10 +150,10 @@ const Testimonials = () => {
           slidesPerView={1}
           breakpoints={{
             640: {
-              slidesPerView: 2,
+              slidesPerView: 1,
             },
             768: {
-              slidesPerView: 3,
+              slidesPerView: 1,
             },
           }}
 
@@ -165,9 +165,10 @@ const Testimonials = () => {
                 x:xValue,
                 opacity:opacityValues
             }} 
-            ref = {componentRef} className={`rounded-md bg-slate-200 p-10 mx-auto`}>
-              <div className="flex justify-enter mb-4">
-                <img src={img} alt="" className="rounded-full w-20 h-20" />
+            ref = {componentRef} className={`rounded-md bg-slate-200 p-10 max-w-md mx-auto`}>
+          <div className="max-w-md">
+          <div className="flex justify-enter mb-4">
+                <img src={img} alt="" className="rounded-full w-20 h-20 " />
                 <div className="p-4">
                   <h4>Jacob Joshua</h4>
                   <h5>Chief Manager</h5>
@@ -179,6 +180,7 @@ const Testimonials = () => {
                 interactions, exceptional outcomes. For digital enchantment,
                 it's got to be Embrace!
               </p>
+          </div>
             </motion.div>
           </SwiperSlide>
           <SwiperSlide>
@@ -187,7 +189,7 @@ const Testimonials = () => {
                 x:xValue,
                 opacity:opacityValues
             }} 
-            ref = {componentRef} className={`rounded-md bg-slate-200 p-10 mx-auto`}>
+            ref = {componentRef} className={`rounded-md bg-slate-200 p-10 mx-auto max-w-md`}>
               <div className="flex justify-enter mb-4">
                 <img src={img2} alt="" className="rounded-full w-20 h-20" />
                 <div className="p-4">
@@ -210,7 +212,7 @@ const Testimonials = () => {
                 x:xValue,
 
             }} 
-            ref = {componentRef} className={`rounded-md bg-slate-200 p-10 mx-auto`}>
+            ref = {componentRef} className={`rounded-md bg-slate-200 p-10 mx-auto max-w-md`}>
               <div className="flex justify-enter mb-4">
                 <img src={img3} alt="" className="rounded-full w-20 h-20" />
                 <div className="p-4">
@@ -231,7 +233,7 @@ const Testimonials = () => {
                 x:xValue,
                 opacity:opacityValues
             }} 
-            ref = {componentRef} className={`rounded-md bg-slate-200 p-10 mx-auto`}>
+            ref = {componentRef} className={`rounded-md bg-slate-200 p-10 mx-auto max-w-md`}>
               <div className="flex justify-enter mb-4">
                 <img src={img4} alt="" className="rounded-full w-20 h-20" />
                 <div className="p-4">
@@ -253,7 +255,7 @@ const Testimonials = () => {
                 opacity:opacityValues
             }} 
             ref = {componentRef} 
-             className={`rounded-md bg-slate-200 p-10 mx-auto`}>
+             className={`rounded-md bg-slate-200 p-10 mx-auto max-w-md`}>
               <div className="flex justify-enter mb-4">
                 <img src={img} alt="" className="rounded-full w-20 h-20" />
                 <div className="p-4">
@@ -274,7 +276,7 @@ const Testimonials = () => {
                 x:xValue,
                 opacity:opacityValues
             }} 
-            ref = {componentRef}  className={`rounded-md bg-slate-200 p-10 mx-auto`}>
+            ref = {componentRef}  className={`rounded-md bg-slate-200 p-10 mx-auto max-w-md`}>
               <div className="flex justify-enter mb-4">
                 <img src={img2} alt="" className="rounded-full w-20 h-20" />
                 <div className="p-4">

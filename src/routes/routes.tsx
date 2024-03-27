@@ -9,7 +9,11 @@ import SinglePostDetail from "../pages/SinglePostDetail";
 import CreatePost from "../pages/dashboard/CreatePost";
 import Supplies from "../pages/dashboard/Supplies";
 import ProtectedRoute from "../components/layout/ProtectedRoute";
-
+import LeaderBoard from "../pages/LeaderBoard";
+import Community from "../pages/Community";
+import CreateTestimonial from "../pages/dashboard/CreateTestimonial";
+import AddVolunteer from "../pages/AddVolunteers";
+import AboutUs from "../pages/AboutUs";
 const router = createBrowserRouter([
   {
     path: '/',
@@ -39,6 +43,10 @@ const router = createBrowserRouter([
     element:<ProtectedRoute> <CreatePost></CreatePost></ProtectedRoute>,
   },
   {
+    path: "/dashboard/create-testimonial",
+    element:<ProtectedRoute> <CreateTestimonial></CreateTestimonial></ProtectedRoute>,
+  },
+  {
     path: "/register",
     element: <Register></Register>,
   },
@@ -53,6 +61,22 @@ const router = createBrowserRouter([
   {
     path: "/relief-goods",
     element: <Posts></Posts>,
+  },
+  {
+    path: "/leaderboard",
+    element: <LeaderBoard></LeaderBoard>,
+  },
+  {
+    path: "/community",
+    element: <Community></Community>,
+  },
+  {
+    path: "/volunteer",
+    element: <AddVolunteer></AddVolunteer>,
+  },
+  {
+    path: "/about-us",
+    element: <AboutUs></AboutUs>,
   },
 ]);
 

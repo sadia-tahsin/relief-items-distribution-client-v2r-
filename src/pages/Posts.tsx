@@ -18,11 +18,11 @@ const Posts = () => {
                             <img
                                 src={post.Image}
                                 alt={post.Title}
-                                className="w-full h-64 object-cover rounded-t-lg"
+                                className="w-full h-40 object-cover"
                             />
                             <div className="p-6">
                                 <h2 className="text-xl md:text-2xl font-bold mb-4">{post.Title}</h2>
-                                <p className="text-gray-700 mb-4">{post.Description}</p>
+                                <p className="text-gray-700 mb-4 truncate">{post.Description}</p>
                                 <div className="flex justify-between mb-4">
                                     <div className="text-lg font-semibold">Category: {post.Category}</div>
                                     <div className="text-lg font-semibold">Amount: {post.Amount}</div>
